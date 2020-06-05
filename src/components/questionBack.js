@@ -4,6 +4,7 @@ function questionBack({ questionInfo, handleAnswer }) {
 
     const { question, correct_answer, incorrect_answers: [inc1, inc2, inc3] } = questionInfo;
     const shuffled = [correct_answer, inc1, inc2, inc3]
+        .filter((item) => item !== undefined) // not to get undefined value
         .sort(() => 0.5 - Math.random())
         .sort() // for not twice refresh shuffle 
         .map(
