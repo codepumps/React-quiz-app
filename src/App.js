@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <header>
         <h1>Are you ready for Quiz ?</h1>
-        <h3>Select quiz features, and Let's start</h3>
+        <h3>Select quiz features, and start</h3>
       </header>
       <main>
         <div className="dropdowns">
